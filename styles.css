@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #161616;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  position: fixed;
+}
+
+.nav-wrapper {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100vw;
+}
+.nav-wrapper .logo {
+  margin: 5px 15px;
+  width: 100px;
+}
+@media screen and (min-width: 768px) {
+  .nav-wrapper .logo {
+    width: 150px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  overflow: scroll;
+}
+@media screen and (min-width: 768px) {
+  .main-container {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    text-align: left;
+    justify-content: flex-start;
+    width: 50%;
+    flex-grow: 0;
+  }
+}
+.content-wrapper__title {
+  font-size: 3.2rem;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .content-wrapper__title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content-wrapper__title {
+    font-size: 4rem;
+  }
+}
+.content-wrapper__title__enh {
+  background: #7d2dff;
+  background: linear-gradient(to left, #7d2dff, #41ddff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content-wrapper__subtitle {
+  padding: 25px 10px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .content-wrapper__subtitle {
+    width: 70%;
+    font-size: 1rem;
+  }
+}
+.info-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  padding: 50px 20px;
+}
+@media screen and (max-width: 768px) {
+  .info-wrapper {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+}
+@media screen and (min-width: 768px) {
+  .info-wrapper {
+    width: 40%;
+  }
+}
+.info-wrapper__join {
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 768px) {
+  .info-wrapper__join {
+    width: 80%;
+  }
+}
+.info-wrapper__join__title {
+  padding-top: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .info-wrapper__join__title {
+    text-align: center;
+  }
+}
+.info-wrapper__maillist {
+  margin: 0 10px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .info-wrapper__maillist {
+    padding: 40px;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19.2px);
+    -webkit-backdrop-filter: blur(19.2px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+  }
+}
+.info-wrapper__maillist p {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+.info-wrapper__maillist__form {
+  color: rgba(0, 0, 0, 0.9);
+}
+.info-wrapper__maillist__form input {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.info-wrapper__maillist__form input:focus {
+  outline: none;
+}
+.info-wrapper__maillist__form button {
+  background: none;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: white;
+}
+.info-wrapper__maillist__form button:hover {
+  cursor: pointer;
+}
+
+.info-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 7rem;
+  right: 5rem;
+  filter: blur(80px);
+  -webkit-filter: blur(80px);
+  background: #3d10bd;
+  background: linear-gradient(to left, #3d10bd, #62bdff);
+  opacity: 0.6;
+  width: 500px;
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */
